@@ -1,0 +1,210 @@
+<html>
+<head>
+<title>Vite Calculator</title>
+</head>
+<body>
+<style>
+.main {
+    color: white; /* Set text color */
+    text-align: center; /* Center align text */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Add shadow to the text */
+    font-size: 100px;
+}
+body{
+background-image: url("backer.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+background-color: black;
+}
+.test {
+font-family: sans-serif;
+font-size: 60px;
+color: rgb(7, 235, 159);
+text-shadow: 2px 2px 4px #000000;
+}
+
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  text-align: center;
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+</style>
+<script>
+
+var permission;
+
+permission = prompt('May We Ask Your Name? "Answer in yes or no" ')
+
+if(permission == "yes"){
+alert('Ok Then click ok to continue')
+askName()
+}else if(permission == "Yes"){
+alert('Ok Then click ok to continue')
+askName()
+}else if(permission == "no"){
+alert('Ok continuing you to the website')
+}else if(permission == "No"){
+alert('Ok continuing you to the website')
+}else if(permission == ""){
+alert("You Did'nt even type the Name to Retype refresh the website")
+}else if(permission == null){
+alert('You cancelled it')
+}else{
+true;
+}
+
+function askName(){
+var firstName;
+var lastName;
+
+firstName = prompt('Please Type Your First Name')
+lastName = prompt('Please Type Your Last Name')
+
+if(firstName == "diya"){
+kickDiya();
+}else if(firstName == "Diya"){
+kickDiya;
+}else{
+alert('Hello 👋️ ' + firstName +  lastName)
+}
+
+}
+
+function addFunction(){
+alert('Currently website cant Do the calculation because its under development!')
+}
+
+function kickDiya(){
+alert('Names From Diya Isnt Allowed to Enter Website it is restricted by Dhyan now The Server Will exit you from this website')
+window.close();
+}
+</script>
+<br>
+<br>
+<Br>
+<br>
+<br>
+<br>
+<br>
+
+<center>
+<h1 class="main">Vite</h1>
+</center>
+<center>
+<h1 class="test">
+Test Out Our Calculator
+</h1>
+</center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<center>
+<button class="button-85" role="button" onClick="addFunction();">Add Number</button>
+</center>
+<br>
+<br>
+<br>
+<br>
+<center>
+<button class="button-85" role="button" onClick="addFunction();">Minus Number</button>
+</center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>
+
